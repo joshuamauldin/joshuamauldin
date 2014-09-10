@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-control" content="public">
+    <meta name="description" content="A product designer who cares about mobile &amp; user experience. And GIFs." />
+    <meta name="author" content="Joshua Mauldin">
+    <meta property="og:description" content="A product designer who cares about mobile &amp; user experience. And GIFs." />
+    <meta name="Copyright" content="Joshua Mauldin. All Rights Reserved." />
+    <meta property='og:locale' content='en_US' />
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='Joshua Mauldin' />
+    <meta property='og:image' content='http://joshuamauldin.com/ico/social-logo.jpg' />
+    <meta property='og:url' content='http://joshuamauldin.com' />
+    <meta property='og:site_name' content='Joshua Mauldin' />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="joshuamauldin">
+    <meta name="twitter:title" content="Joshua Mauldin">
+    <meta name="twitter:description" content="A product designer who cares about mobile &amp; user experience. And GIFs.">
+    <meta name="twitter:image:src" content="http://joshuamauldin.com/ico/social-logo.jpg">
+    <meta name="twitter:creator" content="joshuamauldin">
+    <meta name="twitter:domain" content="http://joshuamauldin.com">
+
+    <link rel="apple-touch-icon-precomposed" href="ico/joshuamauldin.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
+
+    <title>Emergency Texts | Joshua Mauldin</title>
+
+    <link href="/css/build.min.css" rel="stylesheet">
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+    </script>
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="article">
+    <header id="header">
+        <div class="masthead clearfix">
+            <div class="inner site-navigation-top">
+                <a class="brand pull-left brand-logo" href="/">
+                    <img src="/img/jm-logo.svg">
+                    <span class="hidden">Joshua Mauldin</span>
+                </a>
+                <button class="btn btn-menu pull-right" type="button" id="trigger-overlay">Menu</button>
+            </div>
+        </div>
+        <div class="row text-center">
+            <h1 class="brand">
+                Emergency Texts
+            </h1>
+            <p class="lead description">
+                A concept on how smartphones can improve texting emergency services.
+            </p>
+        </div>
+        <!-- /row -->
+    </header>
+    <!-- /header -->
+
+    <section class="container">
+
+        <div class="row">
+            <aside class="portfolio-nav col-md-2 hidden-sm hidden-xs">
+                <ul class="breadcrumb">
+                    <li><a href="/">&larr; See all work</a>
+                    </li>
+                </ul>
+            </aside>
+            <article class="col-md-8">
+                <p>As of May 24, 2014, the main 4 carriers in the US will allow texting with 911. That’s great, but I wondered what it would look like if smartphones could build on top of that idea.</p>
+                <p>I want design to do good and feel like a moment of crisis is an ideal spot to employ thoughtful design to ease a difficult situation. Plus, it’s fun to weave different technologies together. What follows are some initial thoughts and a prototype.</p>
+
+                <h2 class="subheader subheader-dark text-center">Overview and Goals</h2>
+
+                <p>I wanted to allow users to have an efficient way of engaging with emergency services when certain situations arise. Composing a text message could be time-consuming in a moment where every second counts; good design can make this easier.</p>
+                <p>It’s also worth considering various use cases. Someone may not be able (or in a place to) speak—the operating system should assist them in the best way possible. Think about a person who may have a physical impairment or may be in a situation where speaking could further endanger them.</p>
+                <p>Smartphones possess the ability to access user data, such as GPS-assisted location and contact information. Employing them along with the main types of emergency calls (fire, medical/accidents, crime) could speed the experience along greatly.</p>
+
+                <picture class="img-buster">
+                    <source srcset="/img/emergency-sketch@2x.jpg" media="(min-width: 1200px)">
+                        <source class="img-responsive" srcset="/img/emergency-sketch.jpg, /img/emergency-sketch@2x.jpg 2x">
+                            <img class="img-responsive" srcset="/img/emergency-sketch.jpg" alt="">
+                </picture>
+                <figcaption class="text-center subtle col-md-10 col-md-offset-1">Some initial ideas I sketched out.</figcaption>
+
+                <p>A portion of the device’s battery could be reserved for emergency use. During an emergency, this could suspend other applications or non-critical systems to maximize battery life.</p>
+                <p>This experience should fit within the standard experience and not create a new visual language or groundbreaking new user interface. It is worth noting that this experience would exist on multiple platforms (Android, Windows Phone, and Blackberry). Given the tools available (Flinto and Sketch!), it was easier to make it happen on iOS.</p>
+
+                <picture class="img-buster">
+                    <source srcset="/img/emergency-screens@2x.png" media="(min-width: 1200px)">
+                        <source class="img-responsive" srcset="/img/emergency-screens.png, /img/emergency-screens@2x.png 2x">
+                            <img class="img-responsive" srcset="/img/emergency-screens.png" alt="">
+                </picture>
+                <figcaption class="text-center subtle col-md-10 col-md-offset-1">Some rough blueprints for screens.</figcaption>
+
+                <p>A person should be able to interact with emergency services in every way the operating system can create a text. This includes on the Lock Screen, the Messages app, and Siri. You’ll find more on that below.</p>
+                <p>It could also take advantage of the microphone during a text session if a user desires. They could initiate a one-way call without going into a call screen. This would be possible by working with a service like Twilio to send and store this data. Collecting it could also be beneficial in a domestic violence situation. (Thanks to Ben Vandgrift for that idea.)</p>
+                <p>If a phone’s been connected to a vehicle’s collision sensors via Bluetooth, it could detect a crash and send a notice to emergency services in the event of an accident.</p>
+                <p>In the event that a message couldn’t be delivered, this application would continuously attempt delivery, rather than fail and ask the user to send it again.</p>
+
+                <video class="center-block" controls preload='none' poster="/img/emergency-poster.png">
+                    <source id='mp4' src="/img/emergency.mp4" type='video/mp4'>
+                        <p>Your user agent does not support the HTML5 Video element.</p>
+                </video>
+                <figcaption class="text-center subtle col-md-10 col-md-offset-1">The prototype in action.</figcaption>
+
+                <h2 class="subheader subheader-dark text-center">How to send messages</h2>
+
+                <h3 class="text-center subtle">Lock Screen</h3>
+                <p>A user will tap the Emergency option on the Lock Screen, bringing up the dial pad, where the user now has the option to select Text. If a user selects Text, they can select their type of emergency, which reduces the time it takes to compose a text. They may select from any and all of the options presented, including not selecting any at all. (This is one situation where we may not want to force a choice.)</p>
+
+                <p>Most types of 911 calls fall into the categories of needing firefighters, medics, police, and sometimes all 3. I’ve accounted for this in this experience.</p>
+
+                <p>The user’s information will be pre-filled in a text message, and it will include their name, phone number, and GPS-assisted current location. The user is sent to a customized SMS screen.</p>
+
+                <h3 class="text-center subtle">Messages</h3>
+                <p>A user initiates a text to emergency services (in the US, it’s 911). The interface adapts slightly to highlight calling 911 and adds a toolbar to include various information such as the user’s GPS-assisted current location and contact information.
+                </p>
+                <h3 class="text-center subtle">Siri</h3>
+                <p>When a user engages Siri, perhaps by saying “Tell 911 that there’s been an accident here,” Siri will create the text, pre-fill it with the user’s name, phone number, and GPS-assisted current location. Then the user is sent to a customized SMS screen, the same as in Option 1.
+                </p>
+
+                <h2 class="subheader subheader-dark text-center">Closing thoughts</h2>
+                <p>I did this as an exercise to see how good design could make a tough situation easier and more efficient. Even if this goes nowhere (I hope it does, though!), it feels important for designers to consider applying their knowledge to other areas.</p>
+
+                <p>It would be wonderful to see a smartphone experience implemented—I’d love to know how, or if, that could happen.</p>
+
+                <p>Further Reading & Data can be found at <a href="http://www.911.gov/pdf/Current911DataCollection-072613.pdf">911 - Data Collection</a>, <a href="http://www.911.gov/whencall.html">911 - When to call 911</a>, <a href="http://www.fcc.gov/guides/text-911-quick-facts-faqs">FCC's fact sheet on 911 calls</a>.</p>
+        </div>
+        <!-- /row -->
+    </section>
+    <!-- /container -->
+
+
+    <div class="overlay overlay-contentscale" id="site-navigation">
+        <button type="button" class="overlay-close">
+            <span class="icon-close"></span>
+            <span class="hidden">Close</span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a>
+                </li>
+                <li><a href="/about/">About</a>
+                </li>
+                <li><a href="/writing/">Writing</a>
+                </li>
+                <li><a href="mailto:hello@joshuamauldin.com">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <hr class="hidden">
+
+    <footer class="text-center footer clearfix">
+        <h4 class="social-header text-center">Find me elsewhere</h4>
+        <ul class="social">
+            <li>
+                <a class="social-link icon-twitter" href="http://twitter.com/joshuamauldin"><i>Twitter</i></a>
+            </li>
+            <li>
+                <a class="social-link icon-instagram" href="http://instagram.com/joshuamauldin"><i>Instagram</i></a>
+            </li>
+            <li>
+                <a class="social-link icon-rdio" href="http://www.rdio.com/people/JoshuaMauldin/"><i>Rdio</i></a>
+            </li>
+        </ul>
+
+        <aside>
+            <p>
+                <small>&copy; 2014, Joshua Mauldin.</small>
+            </p>
+        </aside>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/js/build/production.min.js"></script>
+
+
+
+    <script type="text/javascript" src="//use.typekit.net/lef3ccq.js"></script>
+    <script type="text/javascript">
+    try {
+        Typekit.load();
+    } catch (e) {}
+    </script>
+
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-1087217-1', 'joshuamauldin.com');
+    ga('send', 'pageview');
+    </script>
+
+
+
+</body>
+
+</html>
